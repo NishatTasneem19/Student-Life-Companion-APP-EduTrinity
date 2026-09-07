@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Stu"
+        tools:targetApi="31">
+        <activity
+            android:name=".AutoSleepActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivitySelector"
+            android:exported="false" />
+
+        <activity
+            android:name=".SleepHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SleepStatistics"
+            android:exported="false" />
+        <activity
+            android:name=".SleepActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".MoodChartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DiaryHistory"
+            android:exported="false" />
+        <activity
+            android:name=".History_item"
+            android:exported="false" />
+        <activity
+            android:name=".MoodHistory"
+            android:exported="false" />
+        <activity
+            android:name=".pin"
+            android:exported="false" />
+        <activity
+            android:name=".dialog_pin_input"
+            android:exported="false" />
+        <activity
+            android:name=".Diary"
+            android:exported="false" />
+        <activity
+            android:name=".mood"
+            android:exported="false" />
+        <activity
+            android:name=".MoodInsightsActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".moodfrontpage"
+            android:exported="false"/>
+        <activity
+            android:name=".readydua"
+            android:exported="false" />
+        <activity
+            android:name=".digana"
+            android:exported="false" />
+        <activity
+            android:name=".dua"
+            android:exported="false" />
+        <activity
+            android:name=".Tasbeeh"
+            android:exported="false" />
+        <activity
+            android:name=".analog"
+            android:exported="false" />
+        <activity
+            android:name=".Tasbeehstart"
+            android:exported="false"/>
+
+        <activity
+            android:name=".pomodoro"
+            android:exported="false"/>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:exported="true" />
+
+        <activity
+            android:name=".ToDoList"
+            android:exported="false" />
+        <activity
+            android:name=".SpiritualCorner"
+            android:exported="false" />
+        <activity
+            android:name=".ProductivityFocus"
+            android:exported="false" />
+        <activity
+            android:name=".AcademicTools"
+            android:exported="false" />
+        <activity
+            android:name=".Records"
+            android:exported="false" />
+        <activity
+            android:name=".RecordsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DialogExpense"
+            android:exported="false" />
+        <activity
+            android:name=".PersonalManagement"
+            android:exported="false" />
+        <activity
+            android:name=".AddExpenses"
+            android:exported="false" />
+        <activity
+            android:name=".SidebarActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".GradeMapping"
+            android:exported="false" />
+        <activity
+            android:name=".Semester"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".Course"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SemesterAdapter"
+            android:exported="false"
+            tools:ignore="Instantiatable" />
+        <activity
+            android:name=".SemesterSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TargetCgpaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Predictor"
+            android:exported="false" />
+        <activity
+            android:name=".CGPACalculatorActivity"
+            android:exported="false"/>
+        <activity
+            android:name=".VinayaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Tripitok"
+            android:exported="false" />
+        <activity
+            android:name=".SuttaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".QuranBook"
+            android:exported="false" />
+        <activity
+            android:name=".QuranActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HolybookMain"
+            android:exported="false" />
+        <activity
+            android:name=".Geeta"
+            android:exported="false" />
+        <activity
+            android:name=".Bible"
+            android:exported="false" />
+        <activity
+            android:name=".AbhidhammaActivity"
+            android:exported="false" />
+
+
+
+        <activity
+            android:name=".splash2"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ProfileSetupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

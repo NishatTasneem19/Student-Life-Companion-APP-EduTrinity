@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dua_page"
+    tools:context=".dua">
+
+    <LinearLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/b1"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="1.Dua to extinguish anger >"
+                android:textSize="17sp"
+                android:background="@drawable/button3"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/b2"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="2.Dua for relief from sadness >"
+                android:textSize="17sp"
+                android:background="@drawable/button4"
+                android:textColor="@color/black"
+                />
+
+
+
+            <Button
+                android:id="@+id/b3"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="3.Dua to ease your destiny >"
+                android:textSize="17sp"
+                android:background="@drawable/button5"
+                android:textColor="@color/black"
+                />
+
+
+            <Button
+                android:id="@+id/b4"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="4.Dua for purifying the heart >"
+                android:textSize="17sp"
+                android:background="@drawable/button6"
+                android:textColor="@color/black"
+                 />
+
+
+            <Button
+                android:id="@+id/b5"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="5.Dua for relief from anxiety >"
+                android:textSize="17sp"
+                android:background="@drawable/button7"
+                android:textColor="@color/black"
+                />
+      <Button
+                android:id="@+id/b6"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="6.Dua to remove confusion from one's heart >"
+                android:textSize="17sp"
+                android:background="@drawable/button3"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/b7"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="7.Dua for protection from one's nafs >"
+                android:textSize="17sp"
+                android:background="@drawable/button4"
+                android:textColor="@color/black"
+                />
+
+
+
+            <Button
+                android:id="@+id/b8"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="8.Dua to dispel the gloom of depression >"
+                android:textSize="17sp"
+                android:background="@drawable/button5"
+                android:textColor="@color/black"
+                />
+
+
+            <Button
+                android:id="@+id/b9"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="9.Dua for optimism in times of adversity >"
+                android:textSize="17sp"
+                android:background="@drawable/button6"
+                android:textColor="@color/black"
+                />
+
+
+            <Button
+                android:id="@+id/b10"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="10.Dua for courage >"
+                android:textSize="17sp"
+                android:background="@drawable/button7"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/b11"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="11.Dua for when one's Imaan feels low >"
+                android:textSize="17sp"
+                android:background="@drawable/button3"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/b12"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="12.Dua for when one feels doubtful >"
+                android:textSize="17sp"
+                android:background="@drawable/button4"
+                android:textColor="@color/black"
+                />
+
+
+
+            <Button
+                android:id="@+id/b13"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="13.Dua for gratitude >"
+                android:textSize="17sp"
+                android:background="@drawable/button5"
+                android:textColor="@color/black"
+                />
+
+
+            <Button
+                android:id="@+id/b14"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="14.Dua for happiness >"
+                android:textSize="17sp"
+                android:background="@drawable/button6"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/b15"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="15.Dua to remove guilt from the heart >"
+                android:textSize="17sp"
+                android:background="@drawable/button7"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/b16"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="16.Dua to dispel hatred >"
+                android:textSize="17sp"
+                android:background="@drawable/button3"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/b17"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="17.Dua for guidance >"
+                android:textSize="17sp"
+                android:background="@drawable/button4"
+                android:textColor="@color/black"
+                />
+
+
+
+            <Button
+                android:id="@+id/b18"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="18.Dua to ask for paradise >"
+                android:textSize="17sp"
+                android:background="@drawable/button5"
+                android:textColor="@color/black"
+                />
+
+
+            <Button
+                android:id="@+id/b19"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="19.Dua for repentance >"
+                android:textSize="17sp"
+                android:background="@drawable/button6"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/b20"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="20.For protection from difficulty >"
+                android:textSize="17sp"
+                android:background="@drawable/button7"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/b21"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="21.Dua when one feels lonely >"
+                android:textSize="17sp"
+                android:background="@drawable/button3"
+                android:textColor="@color/black"
+                />
+            <Button
+                android:id="@+id/b22"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="22.Dua for confidence >"
+                android:textSize="17sp"
+                android:background="@drawable/button4"
+                android:textColor="@color/black"
+                />
+
+
+
+            <Button
+                android:id="@+id/b23"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="23.Dua for Allah's love >"
+                android:textSize="17sp"
+                android:background="@drawable/button5"
+                android:textColor="@color/black"
+                />
+
+
+            <Button
+                android:id="@+id/b24"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="24.Dua for the Hereafter >"
+                android:textSize="17sp"
+                android:background="@drawable/button6"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/b25"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="25.Dua for knowledge >"
+                android:textSize="17sp"
+                android:background="@drawable/button7"
+                android:textColor="@color/black"
+                />
+
+            <Button
+                android:id="@+id/b26"
+                android:layout_margin="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="26.Dua to unlock your potential >"
+                android:textSize="17sp"
+                android:background="@drawable/button7"
+                android:textColor="@color/black"
+                />
+
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/tech_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        >
+
+        <!-- Header Section -->
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!-- New container for back, image, and home -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp">
+
+                <!-- Back Button (left) -->
+                <Button
+                    android:id="@+id/btnBack"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentStart="true"
+                    android:background="@drawable/arrow"
+                    android:contentDescription="Back" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="CGPA CALCULATOR"
+                    android:layout_marginLeft="72dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+
+
+
+            </RelativeLayout>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Smart Grade Point Analyzer"
+                android:textColor="#B3FFFFFF"
+                android:textSize="14sp"
+                android:layout_marginBottom="20dp"/>
+        </LinearLayout>
+
+        <!-- Semester Control Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Semesters:"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp"/>
+
+            <Button
+                android:id="@+id/btnDecreaseSemester"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="16dp"
+                android:background="@drawable/minus"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/tvSemesterCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:textColor="#131413"
+                android:textSize="24sp"
+                android:layout_marginHorizontal="16dp"/>
+
+            <Button
+                android:id="@+id/btnIncreaseSemester"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="24sp"
+                android:background="@drawable/plus1"/>
+
+            <Button
+                android:id="@+id/btngrade"
+                android:layout_marginLeft="60dp"
+                android:text="SEE Grade mapping"
+                android:textSize="10sp"
+                android:elegantTextHeight="true"
+                android:textColor="#136899"
+                android:layout_height="30dp"
+                android:layout_width="80dp"
+                android:background="@android:color/transparent"/>
+
+
+
+        </LinearLayout>
+
+        <!-- Semester Tabs -->
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <LinearLayout
+                android:id="@+id/semesterTabs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"/>
+        </HorizontalScrollView>
+
+        <!-- Current Semester GPA -->
+        <TextView
+            android:id="@+id/tvCurrentSemesterGPA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester GPA: 0.00"
+            android:textColor="#1A237E"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/tvTotalCreditsAll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Total Credits (All Semesters): 0.00"
+            android:textColor="#311B92"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <!-- Current Semester Display -->
+
+        <TextView
+            android:id="@+id/tvCurrentSemester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Semester 1 Courses"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold">
+        </TextView>
+
+
+
+        <!-- Semester Container for dynamic courses -->
+        <LinearLayout
+            android:id="@+id/courseContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Course Control Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_vertical"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnAddCourse"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Add Course"
+                android:textSize="10dp"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="#006064"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnDeleteSemesterData"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:text="Delete Semester Data"
+                android:textSize="10dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:backgroundTint="#880E4F"
+                android:textColor="#FFFFFF"/>
+
+            <Button
+                android:id="@+id/btnRemoveCourse"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:textSize="10dp"
+                android:text="Remove Course"
+                android:layout_marginStart="4dp"
+                android:backgroundTint="#AB1107"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+
+        <!-- Result Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/result_bg"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RESULTS"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp">
+
+                <TextView
+                    android:id="@+id/tvTotalCGPA"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cumulative CGPA: "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/tvCGPA"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0.00"
+                    android:textColor="#4CAF50"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:gravity="end"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Credits:"
+                    android:textColor="#B3FFFFFF"
+                    android:textSize="16sp"/>
+
+                <TextView
+                    android:id="@+id/tvTotalCredits"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#4CAF50"
+                    android:textSize="20sp"
+                    android:gravity="end"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Calculate Button -->
+        <Button
+            android:id="@+id/btnCalculate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="CALCULATE CGPA"
+            android:layout_marginTop="5dp"
+            android:backgroundTint="#006064"
+            android:textColor="#FFFFFF"
+            android:textAllCaps="false"
+            android:textSize="18sp"/>
+
+        <!-- CGPA Predictor Button -->
+        <!-- CGPA Predictor & Target CGPA Buttons -->
+        <!-- CGPA Predictor & Target CGPA Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="12dp">
+
+            <Button
+                android:id="@+id/btnPredictor"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="CGPA PREDICTOR"
+                android:backgroundTint="#006064"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="10sp"
+                android:layout_marginEnd="4dp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnTargetCGPA"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="TARGET CGPA"
+                android:backgroundTint="#006064"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="12sp"
+                android:gravity="center" />
+
+            <Button
+                android:id="@+id/btnSummary"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:text="CGPA Summary"
+                android:backgroundTint="#006064"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:textSize="10sp"
+                android:layout_marginEnd="4dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+
+        <!-- Remove Semester Button -->
+        <Button
+            android:id="@+id/btnRemoveSemester"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Remove Semester"
+            android:layout_gravity="center"
+            android:backgroundTint="#99081A"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

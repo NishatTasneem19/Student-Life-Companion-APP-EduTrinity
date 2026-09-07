@@ -1,0 +1,34 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/midnight2"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose Entry Mode"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="40dp"/>
+
+    <Button
+        android:id="@+id/manualBtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="📝 Manual Sleep Log"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#7C3AED"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/autoBtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:textColor="#FFFFFF"
+        android:text="⏱️ One-Tap Sleep Tracking"
+        android:backgroundTint="#10B981"/>
+</LinearLayout>

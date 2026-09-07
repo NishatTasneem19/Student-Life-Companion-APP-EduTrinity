@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/editDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Click to select date"
+        android:clickable="true"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:drawableEnd="@android:drawable/ic_menu_edit"
+        android:background="#f0f0f0"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select Bedtime"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/editStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Click to select start time"
+        android:clickable="true"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:drawableEnd="@android:drawable/ic_menu_edit"
+        android:background="#f0f0f0"
+        android:minHeight="48dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Select Wake Up Time"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"/>
+
+    <TextView
+        android:id="@+id/editEnd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Click to select end time"
+        android:clickable="true"
+        android:padding="12dp"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center_vertical"
+        android:drawableEnd="@android:drawable/ic_menu_edit"
+        android:background="#f0f0f0"
+        android:minHeight="48dp" />
+
+</LinearLayout>

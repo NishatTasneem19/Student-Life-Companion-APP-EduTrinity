@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/asdds">
+
+    <ImageButton
+        android:id="@+id/btnOpenQuran"
+        android:layout_width="190dp"
+        android:layout_height="130dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginLeft="88dp"
+        android:src="@drawable/abbc"
+        android:background="@null"
+        android:contentDescription="Open Quran"
+        android:scaleType="fitCenter" />
+
+
+
+    <TextView
+        android:id="@+id/tvVerseLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="107dp"
+        android:text="Verse of the Day"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:backgroundTint="@color/cardview_dark_background"
+        android:id="@+id/tvDailyVerse"
+        android:layout_marginLeft="73dp"
+        android:layout_width="225dp"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

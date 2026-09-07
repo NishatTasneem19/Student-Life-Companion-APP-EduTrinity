@@ -1,0 +1,86 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <EditText
+        android:id="@+id/etTaskTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Task Title"
+        android:textSize="16sp"
+        android:inputType="textCapSentences"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Description + Reminder Row -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="12dp">
+
+        <EditText
+            android:id="@+id/etTaskDescription"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Short Description (max 50 words)"
+            android:inputType="textMultiLine"
+            android:maxLines="3"
+            android:textSize="16sp"
+            android:scrollbars="vertical"/>
+
+        <ImageButton
+            android:id="@+id/btnSetReminder"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/timer"
+            android:background="@android:color/transparent"
+            android:contentDescription="Set Reminder"
+            android:layout_marginStart="8dp"/>
+    </LinearLayout>
+
+    <!-- Reminder Preview -->
+    <TextView
+        android:id="@+id/tvReminderPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No reminder set"
+        android:textColor="#111"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Category Selector -->
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Action Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFB6B6"
+            android:text="Cancel" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="#D8EAD8"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+</LinearLayout>

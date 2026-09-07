@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/tech_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Top Buttons Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="30dp"
+            android:layout_marginTop="140dp">
+
+
+
+        </LinearLayout>
+
+        <!-- Main Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Target CGPA Calculator"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Total Program Credits -->
+            <EditText
+                android:backgroundTint="#E9DBDBFF"
+                android:id="@+id/etTotalCredits"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter total program credits"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="12dp"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"/>
+
+
+
+            <!-- Target CGPA -->
+            <EditText
+                android:backgroundTint="#E9DBDBFF"
+                android:id="@+id/etTargetCGPA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter target CGPA"
+                android:inputType="numberDecimal"
+                android:layout_marginBottom="16dp"
+                android:padding="12dp"
+                android:background="@android:drawable/edit_text"/>
+
+            <Button
+                android:id="@+id/btnCalculate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Calculate Target GPA"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:backgroundTint="#B1F4DA"
+                android:id="@+id/tvResult"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+                android:textColor="@android:color/black"
+                android:gravity="center"
+                android:padding="12dp"
+                android:background="@android:color/white"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

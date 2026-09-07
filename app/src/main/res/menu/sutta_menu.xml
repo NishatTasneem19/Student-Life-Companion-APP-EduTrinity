@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_add_bookmark"
+        android:title="Add Bookmark"/>
+
+    <item
+        android:id="@+id/menu_view_bookmarks"
+        android:title="View Bookmarks"/>
+
+    <item
+        android:id="@+id/menu_delete_bookmark"
+        android:title="Delete Bookmark"/>
+
+</menu>

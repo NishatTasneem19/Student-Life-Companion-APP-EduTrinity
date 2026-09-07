@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ready_dua_page"
+    tools:context=".Tasbeeh"
+    android:paddingTop="20dp"
+    android:paddingBottom="20dp"
+    android:gravity="center_horizontal">
+
+    <!-- Counter Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="180dp">
+
+        <TextView
+            android:id="@+id/counterText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000000"
+            android:textSize="15sp"
+           android:textStyle="bold"
+        android:gravity="center"
+        android:lineSpacingExtra="8dp"
+        />
+
+    </LinearLayout>
+
+    <!-- Buttons Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <!-- First row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/alhamdulillah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableTop="@drawable/star"
+                android:text="Alhamdulillah"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:padding="6dp"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/allahu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableTop="@drawable/star"
+                android:text="Allahu Akbar"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:padding="6dp"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/astaghfirullah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableTop="@drawable/star"
+                android:text="Astaghfirullah"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:padding="6dp"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+        <!-- Second row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="6dp">
+
+            <Button
+                android:id="@+id/subhanallah"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableTop="@drawable/star"
+                android:text="Subhanallah"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:padding="6dp"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/lailaha"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableTop="@drawable/star"
+                android:text="La Ilaha Illallah"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:padding="6dp"
+                android:layout_margin="5dp" />
+
+            <Button
+                android:id="@+id/lahawla"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableTop="@drawable/star"
+                android:text="La Hawla wala..."
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:padding="6dp"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+
+        <!-- Bottom row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:paddingTop="8dp">
+
+            <Button
+                android:id="@+id/newreset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableTop="@drawable/refresh"
+                android:text="Reset"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:padding="6dp"
+                android:layout_margin="4dp" />
+
+            <Button
+                android:id="@+id/vol"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/border"
+                android:drawableTop="@drawable/newvol"
+                android:text="Sound"
+                android:textColor="#000000"
+                android:textSize="10sp"
+                android:padding="6dp"
+                android:layout_margin="4dp" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

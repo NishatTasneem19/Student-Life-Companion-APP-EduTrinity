@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FFFFFF"
+    android:padding="30dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        >
+
+        <!-- Header -->
+        <TextView
+            android:id="@+id/tvGridHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose Category"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Grid of Icons -->
+        <GridLayout
+            android:id="@+id/iconGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:rowCount="5"
+            android:alignmentMode="alignMargins"
+            android:rowOrderPreserved="false"
+            android:useDefaultMargins="true">
+
+            <!-- Sample item: repeat this block for each icon (total 20 times) -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp"
+                android:id="@+id/layoutFood"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="?attr/selectableItemBackground">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/foodt"
+                android:contentDescription="Icon"
+
+                 />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Food"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutShopping"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/shopping"
+                android:contentDescription="Icon"
+                app:tint="#FF69B4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shopping"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutSports"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/sports"
+                android:contentDescription="Icon"
+                app:tint="#29335C" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sports"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutTransport"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/transportation"
+                android:contentDescription="Icon"
+                app:tint="#00BFFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Transport"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutPhone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/phone"
+                android:contentDescription="Icon"
+                app:tint="#3C1414" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutTravel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/travel"
+                android:contentDescription="Icon"
+                app:tint="#20B2AA" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Travel"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutHealth"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/health"
+                android:contentDescription="Icon"
+                app:tint="#FF6F61" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Health"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutPets"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/pets"
+                android:contentDescription="Icon"
+                app:tint="#F4A460" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pets"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutEducation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/education"
+                android:contentDescription="Icon"
+                app:tint="#4B0082" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Education"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutClothing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/clothing"
+                android:contentDescription="Icon"
+                app:tint="#EF959C" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clothing"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutElectronics"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/electronics"
+                android:contentDescription="Icon"
+                app:tint="#007BFF" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Electronics"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutDonation"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/donation"
+                android:contentDescription="Icon"
+                app:tint="#FFD700" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Donation"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutVeg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/vegetables"
+                android:contentDescription="Icon"
+                app:tint="#228B22" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vegetables"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutFruits"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/fruits"
+                android:contentDescription="Icon"
+                app:tint="#FF4500" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Fruits"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutSocial"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/social"
+                android:contentDescription="Icon"
+                app:tint="#FF66CC" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Social"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutBeauty"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/beauty"
+                    android:contentDescription="Icon"
+                    app:tint="#C8A2C8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Beauty"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutHousing"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/housing"
+                android:contentDescription="Icon"
+                app:tint="#A0522D" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Housing"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutGifts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/gifts"
+                    android:contentDescription="Icon"
+                    app:tint="#DAA520" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gifts"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutKids"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/kids"
+                android:contentDescription="Icon"
+                app:tint="#87CEFA" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kids"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutRepairs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/repairs"
+                android:contentDescription="Icon"
+                app:tint="#B22222" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Repairs"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutCar"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/car"
+                    app:tint="#7D70BA"
+                    android:contentDescription="Icon"
+              />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Car"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutLoan"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/loan"
+                    app:tint="#800020"
+                android:contentDescription="Icon"
+                />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Loan"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutParties"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/entertainment"
+                    app:tint="#9B30FF"
+                    android:contentDescription="Icon"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Parties"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutInternet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                android:contentDescription="Icon"
+                    android:src="@drawable/internet"
+                app:tint="#4DCCBD" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Internet"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutTax"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/tax"
+                    android:contentDescription="Icon"
+                    app:tint="#B7410E" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tax"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutCrafts"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/crafts"
+                    android:contentDescription="Icon"
+                    app:tint="#007EA7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Crafts"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutBusiness"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/business"
+                    android:contentDescription="Icon"
+                    app:tint="#E63462" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Business"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layoutGaming"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="8dp">
+
+                <ImageView
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/gaming"
+                    android:contentDescription="Icon"
+                    app:tint="#8A2BE2" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gaming"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:gravity="center" />
+            </LinearLayout>
+
+
+
+        </GridLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_height="40dp"
+            android:layout_gravity="end"
+           >
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="14sp"
+                android:text="Cancel"
+                android:backgroundTint="#FF0000"
+                android:textColor="#FFFFFF"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

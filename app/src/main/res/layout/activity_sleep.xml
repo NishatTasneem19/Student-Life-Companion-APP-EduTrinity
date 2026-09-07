@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="15dp"
+    android:gravity="center"
+    android:background="@drawable/midnight2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/night" />
+
+    <EditText
+        android:id="@+id/startTime"
+        android:hint="Enter Bedtime (e.g. 11:30 PM)"
+        android:background="@drawable/input_bg"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:padding="12dp"
+        android:layout_width="300dp"
+    android:layout_height="70dp"/>
+    <EditText
+        android:id="@+id/endTime"
+        android:hint="Enter Wakeup Time (e.g. 7:30 AM)"
+        android:background="@drawable/input_bg"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#AAAAAA"
+        android:padding="12dp"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+    android:layout_height="70dp"/>
+
+    <Button
+        android:id="@+id/saveBtn"
+        android:text="💾 Save Sleep Data"
+        android:backgroundTint="#7C3AED"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:layout_width="300dp"
+    android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/viewBtn"
+        android:text="📊 View Last Record"
+        android:backgroundTint="#4F46E5"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+    android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/historyBtn"
+        android:text="📖 View Sleep History"
+        android:backgroundTint="#10B981"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="10dp"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"/>
+
+
+</LinearLayout>
+

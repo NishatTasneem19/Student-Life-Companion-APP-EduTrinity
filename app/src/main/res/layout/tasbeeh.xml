@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/digital_tasbih_page"
+    tools:context=".Tasbeeh">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="بِسْمِ ٱللَّٰهِ ٱلرَّحْمَٰنِ ٱلرَّحِيمِ"
+            android:textColor="#EFBF04"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="30dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/counterText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textColor="#EFBF04"
+                android:textSize="50sp"
+                android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="40dp">
+
+        <Button
+            android:id="@+id/countButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/border2"
+            android:drawableTop="@drawable/tc"
+            android:drawablePadding="4dp"
+            android:text="Count"
+            android:textStyle="bold"
+            android:textColor="#EFBF04"
+            android:textSize="16sp" />
+
+        <Button
+            android:background="@drawable/border2"
+            android:id="@+id/resetButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableTop="@drawable/rotate_arrow"
+            android:drawablePadding="4dp"
+            android:text="Reset"
+            android:textStyle="bold"
+            android:textColor="#EFBF04"
+            android:textSize="16sp"
+            />
+
+        <Button
+            android:background="@drawable/border2"
+            android:id="@+id/soundButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:drawableTop="@drawable/sound"
+            android:drawablePadding="4dp"
+            android:text="Sound"
+            android:textStyle="bold"
+            android:textColor="#EFBF04"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</LinearLayout>
+</LinearLayout>
+
+

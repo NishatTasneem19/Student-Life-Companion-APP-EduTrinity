@@ -1,0 +1,5 @@
+<resources>
+    <item name="etCourseCode1" type="id"/>
+    <item name="etCredits1" type="id"/>
+    <item name="spinnerGrade1" type="id"/>
+</resources>

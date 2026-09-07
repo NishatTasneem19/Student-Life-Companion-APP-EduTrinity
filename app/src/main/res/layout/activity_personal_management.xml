@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/budgetPlannerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PersonalManagement">
+
+    <!-- 🌄 Background Image -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/bp1"
+    android:scaleType="centerCrop"
+    android:contentDescription="Background"
+    android:alpha="0.7" />
+
+    <!-- 🎨 Main Content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:gravity="top"
+        android:layout_marginTop="40dp"
+        android:background="@android:color/transparent">
+
+        <!-- Header with gradient background -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:elevation="6dp"
+            android:background="#ffffff">
+
+            <!-- 🔙 Back Button -->
+            <ImageButton
+                android:id="@+id/btnBack"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/back"
+                android:background="@android:color/transparent"
+                android:contentDescription="Back"
+                android:layout_marginEnd="10dp"
+                android:clickable="true"
+                android:focusable="true" />
+
+            <!-- 🏷️ Title -->
+            <TextView
+                android:id="@+id/tvHeaderTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Budget Planner"
+                android:textColor="#808080"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginEnd="10dp"
+                android:fontFamily="sans-serif-medium" />
+
+            <LinearLayout
+                android:id="@+id/navRecords"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?attr/selectableItemBackground"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:src="@drawable/records"
+                    app:tint="#EF3A4D" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Records"
+                    android:textColor="#EF3A4D"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Monthly Budget Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginBottom="28dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            android:backgroundTint="#FFFFFF"
+            android:padding="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:weightSum="3"
+
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp">
+
+                <TextView
+                    android:id="@+id/tvMonthlyBudgetLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="15dp"
+                    android:text="Monthly Budget"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:fontFamily="sans-serif-medium" />
+
+                <EditText
+                    android:id="@+id/etMonthlyBudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:hint="Enter budget"
+                    android:inputType="numberDecimal"
+                    android:background="@drawable/rounded_edittext_orange"
+                    android:padding="10dp"
+                    android:layout_margin="5dp"
+                    android:textSize="15sp"
+                    android:textColor="#5D4037"
+                    android:fontFamily="sans-serif" />
+
+                <Button
+                    android:id="@+id/btnSaveBudget"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:text="Save"
+                    android:layout_marginRight="5dp"
+                    android:textAllCaps="false"
+                    android:backgroundTint="#EF3A4D"
+                    android:textColor="#FFF"
+                    android:textSize="10sp"
+                    android:fontFamily="sans-serif-medium" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Date Picker Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/btnPickDateBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:weightSum="3">
+
+                <TextView
+                    android:id="@+id/tvPickDateLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pick Date"
+
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:paddingLeft="15dp"
+                    android:textColor="#5D4037"
+                    android:fontFamily="sans-serif-medium" />
+
+                <TextView
+                    android:id="@+id/tvSelectedDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not selected"
+                    android:textSize="15sp"
+                    android:textColor="#6D4C41"
+                    android:paddingStart="16dp"
+                    android:fontFamily="sans-serif" />
+
+                <ImageButton
+                    android:id="@+id/btnPickDate"
+                    android:layout_width="44dp"
+                    android:layout_height="44dp"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:contentDescription="Pick Date"
+                    android:src="@drawable/calenda1r" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Add Expense Card -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="28dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:id="@+id/tvAddExpenseBox"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/tvAddExpenseLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Expense"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:textColor="#5D4037"
+                    android:fontFamily="sans-serif-medium" />
+
+                <ImageButton
+                    android:id="@+id/btnAddExpense"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/button_bg"
+                    android:src="@drawable/ic_plus"
+                    android:scaleType="centerInside"
+                    android:contentDescription="Add Task"
+                    android:elevation="8dp" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</FrameLayout>
+
+

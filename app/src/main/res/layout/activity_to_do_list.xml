@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/budgetPlannerRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+
+    android:paddingBottom="24dp">
+
+    <!-- Background for non-empty tasks -->
+    <ImageView
+        android:id="@+id/bgTasks"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pf1"
+        android:scaleType="centerCrop"
+        android:alpha="0.5"
+        android:contentDescription="Task List Background"
+        android:visibility="gone" />
+
+
+    <ImageView
+        android:id="@+id/bgImage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/pf1"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:contentDescription="Background"
+        android:alpha="0.3" />
+
+    <!-- Background for empty tasks -->
+    <ImageView
+        android:id="@+id/bgEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/empty_list_bg"
+        android:scaleType="centerInside"
+        android:adjustViewBounds="true"
+        android:contentDescription="Empty State Background"
+        android:visibility="gone" />
+
+
+    <!-- Main content layout -->
+    <LinearLayout
+        android:paddingBottom="24dp"
+        android:paddingRight="24dp"
+        android:paddingLeft="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Main Header -->
+        <TextView
+            android:layout_marginTop="64dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:id="@+id/tvHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My To-Do List"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#3A3A3A"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:gravity="center"
+            android:background="#ffffff"
+            android:textAlignment="center" />
+
+        <!-- Completed section header -->
+        <TextView
+            android:id="@+id/tvCompletedHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Completed"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#374151"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:background="#1FFFFFFF"
+            android:visibility="gone" />
+
+        <!-- Tasks list -->
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerTasks"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:clipToPadding="false" />
+
+    </LinearLayout>
+
+    <!-- Add Task FAB -->
+    <ImageButton
+        android:id="@+id/btnAddTask"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="32dp"
+        android:background="@drawable/button_bg"
+        android:src="@drawable/ic_plus"
+        android:scaleType="centerInside"
+        android:contentDescription="Add Task"
+        android:elevation="8dp" />
+
+</FrameLayout>

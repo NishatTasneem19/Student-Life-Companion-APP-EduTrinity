@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/bg">
+
+
+
+    <!-- Quran Button (Bigger, Top) -->
+    <LinearLayout
+        android:layout_marginTop="150dp"
+        android:id="@+id/btnBookQuran"
+        android:layout_width="300dp"
+        android:layout_height="160dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:focusable="true"
+        android:layout_marginBottom="30dp"
+        android:elevation="6dp">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/quran_icon"
+            android:scaleType="fitCenter" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quran"
+            android:textSize="24sp"
+            android:textColor="#2E3A59"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+    <!-- Row for Bible, Geeta, Tripitok -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:weightSum="3">
+
+        <!-- Bible -->
+        <LinearLayout
+            android:id="@+id/btnBookBible"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="8dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/bible_icon"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bible"
+                android:textSize="18sp"
+                android:textColor="#DBBDBD"
+                android:gravity="center"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- Geeta -->
+        <LinearLayout
+            android:id="@+id/btnBookGeeta"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="8dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/geeta_icon"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geeta"
+                android:textSize="18sp"
+                android:textColor="#E7E2BF"
+                android:gravity="center"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+
+        <!-- Tripitok -->
+        <LinearLayout
+            android:id="@+id/btnBookTripitok"
+            android:layout_width="0dp"
+            android:layout_height="130dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_margin="8dp"
+            android:elevation="4dp">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/tripitaka"
+                android:scaleType="fitCenter" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tripitaka"
+                android:textSize="18sp"
+                android:textColor="#DEBEB1"
+                android:gravity="center"
+                android:layout_marginTop="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
